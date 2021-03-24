@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meus pokemons</title>
+
+        <link href="styles/index.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">PokeAPI</h1>                        
+            <div>
+                <img 
+                    src="https://avatars.githubusercontent.com/u/22751959?s=460&u=71cb447138bba0ee8af69ac48e2bd379ffcd3fe4&v=4" 
+                    alt="Foto de perfil"
+                />
+                <span>Minha conta</span>
+            </div>
+        </header>
+        <main>
+            <div id="pesquisa">
+                <input class="styled-input" type="text" placeholder="Seu pineco vai aqui" />
+            </div>  
+            <div class="lista">                                   
+                <div class="pokemon">
+                    <strong>#1 Pineco</strong>
+                    <img 
+                        src="img/pineco.png" 
+                        alt="Pokemon pineco"
+                        width="200px"
+                    />
+                </div>                    
+                <div class="pokemon">
+                    <strong>#2 Pikachu</strong>                    
+                    <img 
+                        src="img/pikachu.png" 
+                        alt="Pokemon pikachu"
+                        width="200px"
+                    />
+                </div>                    
+            </div>
+            <form class="form" method="POST" action="/enviar-mensagem">
+                <label for="name">Nome</label>
+                <input 
+                    class="styled-input" 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Digite seu nome aqui"/>
+                <label for="email">Email</label>
+                <input 
+                    class="styled-input" 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Digite seu email aqui"/>
+                <label for="email">Email</label>
+                <textarea  
+                    class="styled-input" 
+                    name="comentario" 
+                    id="comentario" 
+                    rows="5" 
+                    placeholder="Digite seu comentário aqui"
+                    maxlength="100"
+                ></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </main>        
+        <footer>
+            <span>Desenvolvido por Ivens Diego Muller</span>            
+        </footer>
+    </body>
+</html>
